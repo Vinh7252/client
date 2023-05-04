@@ -15,6 +15,10 @@ import ProductDetail from "./pages/ProductDetail";
 import ProductAdd from "./pages/ProductAdd";
 import ProductEdit from "./pages/ProductEdit";
 import RootLayout from "./components/RootLayout";
+import axios from "axios";
+
+// Cònig báeURL for every request
+axios.defaults.baseURL = "https://ecommerce-server-yyd3.onrender.com/";
 
 const router = createBrowserRouter([
   {

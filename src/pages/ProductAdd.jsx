@@ -12,8 +12,7 @@ export default function ProductAdd() {
   } = useForm();
 
   const addProductMutation = useMutation({
-    mutationFn: (newProduct) =>
-      axios.post("http://localhost:4000/products/add", newProduct),
+    mutationFn: (newProduct) => axios.post("/products/add", newProduct),
     onSuccess: () => reset(),
   });
 
